@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+header h1 {
+  font-family: "Rosarivo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 750%;
+  text-align: center;
+  line-height: 0.25;
+}
+@media (max-width: 658px) {
+  header h1 {
+    line-height: 1;
+  }
+}
+header h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 150%;
+}
+header p {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 75%;
+}
+
+/*# sourceMappingURL=style.css.map */
