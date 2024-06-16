@@ -29,4 +29,9 @@ header p {
   font-size: 75%;
 }
 
+body {
+  background: repeating-linear-gradient(0deg, #fcfcec 4px, #141414 2px, #a6b1e1 1px, #504f54 2px, #fcfcec 4px);
+  color: #141414;
+}
+
 /*# sourceMappingURL=style.css.map */
