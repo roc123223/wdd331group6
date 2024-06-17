@@ -5,6 +5,7 @@ $emphasis-color: #a6b1e1;
 
 $background-element: repeating-linear-gradient(
     0deg,
+    transparent .1px,
     $background-color 4px,
     $text-color 2px,
     $emphasis-color 1px,

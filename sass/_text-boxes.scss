@@ -1,0 +1,39 @@
+$background-color: #fcfcec;
+$text-color: #141414;
+$shadow-color: #504f54;
+$emphasis-color: #a6b1e1;
+
+$border-gradient: repeating-linear-gradient(
+    0deg,
+    transparent .1px,
+    $text-color .1px,
+    $shadow-color .1px,
+    $text-color .2px,
+);
+
+main {
+
+
+    > .container {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 1fr);
+        gap: 1em;
+    }
+    
+    article {
+
+        .container {
+            border: .25em solid;
+            border-image: $border-gradient 1;
+            padding: 1em;
+            display: flex;
+            flex-flow: column wrap;
+
+            & h2 {
+                text-align: center;
+            }
+        }
+    }
+}
