@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+body {
+  background: repeating-linear-gradient(0deg, transparent 0.1px, #fcfcec 4px, #141414 2px, #a6b1e1 1px, #504f54 2px, #fcfcec 4px);
+  color: #141414;
+}
+
 header h1 {
   font-family: "Rosarivo", cursive;
   font-weight: 400;
@@ -29,9 +34,22 @@ header p {
   font-size: 75%;
 }
 
-body {
-  background: repeating-linear-gradient(0deg, #fcfcec 4px, #141414 2px, #a6b1e1 1px, #504f54 2px, #fcfcec 4px);
-  color: #141414;
+main > .container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  gap: 1em;
+}
+main article .container {
+  border: 0.25em solid;
+  border-image: repeating-linear-gradient(0deg, transparent 0.1px, #141414 0.1px, #504f54 0.1px, #141414 0.2px) 1;
+  padding: 1em;
+  display: flex;
+  flex-flow: column wrap;
+}
+main article .container h2 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
