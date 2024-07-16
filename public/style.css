@@ -8,11 +8,11 @@ header h1 {
   font-family: "Rosarivo", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 750%;
+  font-size: 1000%;
   text-align: center;
   line-height: 0.25;
 }
-@media (max-width: 658px) {
+@media (max-width: 867px) {
   header h1 {
     line-height: 1;
   }
@@ -32,6 +32,27 @@ header p {
   font-style: normal;
   text-align: center;
   font-size: 75%;
+}
+
+header {
+  text-align: center;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 100%;
+}
+header ul {
+  padding-left: 0;
+  list-style-type: none;
+  list-style-position: inside;
+}
+header svg {
+  height: 0.7%;
+  width: 0.7%;
+  margin: auto;
+  fill: #a6b1e1;
 }
 
 a {
@@ -151,6 +172,27 @@ aside {
   padding: 1em;
   margin: 1em auto;
   width: 50%;
+}
+
+.page-footer {
+  text-align: center;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 100%;
+}
+.page-footer ul {
+  padding-left: 0;
+  list-style-type: none;
+  list-style-position: inside;
+}
+.page-footer svg {
+  height: 0.7%;
+  width: 0.7%;
+  margin: auto;
+  fill: #a6b1e1;
 }
 
 /*# sourceMappingURL=style.css.map */
