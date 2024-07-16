@@ -34,22 +34,123 @@ header p {
   font-size: 75%;
 }
 
-main > .container {
-  width: 80%;
+a {
+  color: #a6b1e1;
+  text-decoration: none;
+}
+
+nav {
+  padding: 2.5%;
+}
+nav ul {
+  border: 0.25em solid #141414;
+  border-image: repeating-linear-gradient(0deg, transparent 0.1px, #141414 0.1px, #504f54 0.1px, #141414 0.2px) 1;
   margin: 0 auto;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: "Source Sans 3", sans-serif;
+}
+nav ul li {
+  margin: 0.5em;
+  font-size: 2em;
+}
+
+main {
+  font-family: "Source Sans 3", sans-serif;
+}
+main > .container {
+  width: 95%;
+  margin: 0.5em auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1em;
 }
-main article .container {
-  border: 0.25em solid;
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  border-bottom: 0.25em solid #141414;
   border-image: repeating-linear-gradient(0deg, transparent 0.1px, #141414 0.1px, #504f54 0.1px, #141414 0.2px) 1;
+}
+main article#about {
+  border-image: repeating-linear-gradient(0deg, transparent 0.1px, #141414 0.1px, #504f54 0.1px, #141414 0.2px) 1;
+  grid-column: 1/-1;
+  border: 0.25em solid #141414;
+}
+@media screen and (min-width: 550px) {
+  main article#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+main article#guidelines {
+  border: 0.25em solid #141414;
+  border-image: repeating-linear-gradient(0deg, transparent 0.1px, #141414 0.1px, #504f54 0.1px, #141414 0.2px) 1;
+  grid-column: 1/-1;
+}
+@media screen and (min-width: 550px) {
+  main article#guidelines {
+    column-count: 3;
+    padding: 1em;
+  }
+}
+main article#contribute {
+  grid-column: 1/-1;
+}
+@media screen and (min-width: 550px) {
+  main article#contribute {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+}
+main article#contribute section {
+  border: 0.25em solid #141414;
+  border-image: repeating-linear-gradient(0deg, transparent 0.1px, #141414 0.1px, #504f54 0.1px, #141414 0.2px) 1;
+}
+main article#contribute #files {
+  grid-column: 1/-1;
+  width: 100%;
+}
+main article#contribute #files div {
+  border: 0.25em solid #141414;
+  border-image: repeating-linear-gradient(0deg, transparent 0.1px, #141414 0.1px, #504f54 0.1px, #141414 0.2px) 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column wrap;
+}
+@media screen and (min-width: 550px) {
+  main article#contribute #files div {
+    flex-flow: row wrap;
+  }
+}
+main article#contribute #files div h3::after {
+  content: ":";
+}
+main article#contribute #files div a {
+  font-size: 1.5em;
+}
+main article .container {
   padding: 1em;
   display: flex;
   flex-flow: column wrap;
+  margin: 0.5em auto;
 }
-main article .container h2 {
-  text-align: center;
+main blockquote {
+  border: 0.25em solid #141414;
+  border-image: repeating-linear-gradient(0deg, transparent 0.1px, #141414 0.1px, #504f54 0.1px, #141414 0.2px) 1;
+  padding: 1em;
+}
+
+aside {
+  font-family: "Source Sans 3", sans-serif;
+  border: 0.25em solid #141414;
+  border-image: repeating-linear-gradient(0deg, transparent 0.1px, #141414 0.1px, #504f54 0.1px, #141414 0.2px) 1;
+  padding: 1em;
+  margin: 1em auto;
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
