@@ -19,7 +19,6 @@ header h1 {
 }
 header h2 {
   font-family: "Source Sans 3", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   text-align: center;
@@ -27,7 +26,6 @@ header h2 {
 }
 header p {
   font-family: "Source Sans 3", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   text-align: center;
@@ -37,7 +35,6 @@ header p {
 header {
   text-align: center;
   font-family: "Source Sans 3", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   text-align: center;
@@ -177,7 +174,6 @@ aside {
 .page-footer {
   text-align: center;
   font-family: "Source Sans 3", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   text-align: center;
@@ -194,5 +190,3 @@ aside {
   margin: auto;
   fill: #a6b1e1;
 }
-
-/*# sourceMappingURL=style.css.map */
