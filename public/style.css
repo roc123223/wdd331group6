@@ -69,6 +69,10 @@ main > .container {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1em;
 }
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  border-bottom: 0.25em solid #141414;
+  border-image: repeating-linear-gradient(0deg, transparent 0.1px, #141414 0.1px, #504f54 0.1px, #141414 0.2px) 1;
+}
 main article#about {
   border-image: repeating-linear-gradient(0deg, transparent 0.1px, #141414 0.1px, #504f54 0.1px, #141414 0.2px) 1;
   grid-column: 1/-1;
@@ -83,6 +87,13 @@ main article#about {
 main article#guidelines {
   border: 0.25em solid #141414;
   border-image: repeating-linear-gradient(0deg, transparent 0.1px, #141414 0.1px, #504f54 0.1px, #141414 0.2px) 1;
+  grid-column: 1/-1;
+}
+@media screen and (min-width: 550px) {
+  main article#guidelines {
+    column-count: 3;
+    padding: 1em;
+  }
 }
 main article#contribute {
   grid-column: 1/-1;
@@ -131,6 +142,15 @@ main blockquote {
   border: 0.25em solid #141414;
   border-image: repeating-linear-gradient(0deg, transparent 0.1px, #141414 0.1px, #504f54 0.1px, #141414 0.2px) 1;
   padding: 1em;
+}
+
+aside {
+  font-family: "Source Sans 3", sans-serif;
+  border: 0.25em solid #141414;
+  border-image: repeating-linear-gradient(0deg, transparent 0.1px, #141414 0.1px, #504f54 0.1px, #141414 0.2px) 1;
+  padding: 1em;
+  margin: 1em auto;
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

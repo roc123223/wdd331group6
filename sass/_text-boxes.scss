@@ -53,6 +53,11 @@ main {
         gap: 1em;
     }
 
+    h1,h2, h3, h4, h5, h6 {
+        border-bottom: $border;
+        border-image: $border-image;
+    }
+
     article {
         &#about {
             border-image: $border-image;
@@ -68,6 +73,12 @@ main {
         &#guidelines {
             border: $border;
             border-image: $border-image;
+            grid-column: 1 / -1;
+
+            @media screen and (min-width: 550px) {
+                column-count: 3;
+                padding: 1em;
+            }
         }
 
         &#contribute {
@@ -87,7 +98,7 @@ main {
             #files {
                 grid-column: 1 / -1;
                 width: 100%;
-                
+
                 div {
                     border: $border;
                     border-image: $border-image;
@@ -124,4 +135,14 @@ main {
         border-image: $border-image;
         padding: 1em;
     }
+}
+
+// aside text boxes
+aside {
+    font-family: $font-family;
+    border: $border;
+    border-image: $border-image;
+    padding: 1em;
+    margin: 1em auto;
+    width: 50%;
 }
